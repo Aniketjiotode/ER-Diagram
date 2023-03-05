@@ -54,3 +54,7 @@ ALTER TABLE empolyee_payroll ADD Taxable_Pay INT;
 ALTER TABLE empolyee_payroll ADD Income_Tax INT;
 ALTER TABLE empolyee_payroll ADD Net_Pay INT;
 
+--UC_10
+INSERT INTO empolyee_payroll (name,salary,start,gender,PhoneNumber,Address,Deparment,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay)
+VALUES('Terisa',56000,'2023-02-08','F',987456123,'Pune','Sales',45000,10000,4000,5000,9000)
+
