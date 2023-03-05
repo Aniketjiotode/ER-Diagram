@@ -36,3 +36,12 @@ UPDATE empolyee_payroll SET gender ='M' WHERE name='Aniket' or name = 'Rajat' or
 --UC_7
 
 SELECT SUM(salary) AS Total_Empolyee_Salary FROM empolyee_payroll WHERE gender='M' GROUP BY gender; 
+
+--UC_8
+
+ALTER TABLE empolyee_payroll ADD PhoneNumber BIGINT;
+ALTER TABLE empolyee_payroll ADD Address VARCHAR(255);
+ALTER TABLE empolyee_payroll ADD Deparment VARCHAR(255);
+ALTER TABLE empolyee_payroll  
+ADD CONSTRAINT df_Address
+DEFAULT 'Mg Nagar' FOR Address;
