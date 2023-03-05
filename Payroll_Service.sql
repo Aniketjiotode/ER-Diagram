@@ -45,3 +45,12 @@ ALTER TABLE empolyee_payroll ADD Deparment VARCHAR(255);
 ALTER TABLE empolyee_payroll  
 ADD CONSTRAINT df_Address
 DEFAULT 'Mg Nagar' FOR Address;
+
+--UC_9
+
+ALTER TABLE empolyee_payroll ADD Basic_Pay INT
+ALTER TABLE empolyee_payroll ADD Deductions INT;
+ALTER TABLE empolyee_payroll ADD Taxable_Pay INT;
+ALTER TABLE empolyee_payroll ADD Income_Tax INT;
+ALTER TABLE empolyee_payroll ADD Net_Pay INT;
+
